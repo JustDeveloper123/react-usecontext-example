@@ -1,0 +1,45 @@
+// Підключення TailwindCSS (автоматично скидає стилі)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Глобальні стилі всього проекту
+:root {
+  font-family: sans-serif, Arial, Helvetica, system-ui;
+  font-size: 16px;
+
+  color: black;
+  background-color: white;
+}
+
+// Scroll
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 99, 205);
+  border: 1px solid white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// Tailwind layers
+@layer components {
+  .nav-link {
+    @apply text-lg hover:underline;
+  }
+  .fetch-error {
+    @apply mx-4 my-8 text-center text-lg;
+  }
+}
