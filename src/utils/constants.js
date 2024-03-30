@@ -1,6 +1,4 @@
-const { APP_NAME } = import.meta.env;
-
-export const shopLogo = `/${APP_NAME}/src/assets/React-icon.svg`;
+export const appName = import.meta.env.APP_NAME;
 
 export const dummyProducts = [
   {
