@@ -6,7 +6,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/usecontext-simple-shop/',
+  base: '/react-usecontext-example/',
   envPrefix: 'APP_',
 
   // Aliases
